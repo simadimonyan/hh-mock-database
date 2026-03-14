@@ -14,3 +14,6 @@ ON responses(vacancy_id);
 
 CREATE INDEX idx_responses_responded_at
 ON responses(responded_at);
+
+CREATE INDEX idx_responses_resume_id
+ON responses(resume_id);

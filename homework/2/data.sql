@@ -63,7 +63,7 @@ INSERT INTO responses (
 SELECT
     v.id,
     r.id,
-    v.published_at + random() * interval '7 days'
+    v.published_at + (random() * interval '120 days' - interval '10 days')
 FROM vacancies v
 JOIN LATERAL (
     SELECT id
